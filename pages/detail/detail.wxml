@@ -1,0 +1,31 @@
+<!--pages/detail/detail.wxml-->
+
+<!-- 引入富文本转换库 -->
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view class="container">
+  <view class='title'>{{title}}</view>
+  <view class='info-box'>
+    <image class='avatar' mode='aspectFit' src='{{favicon}}'></image>
+    <text>{{author}}</text>
+    <text>{{pubDate}}</text>
+    <text class='ori-link-txt' bindtap="wxParseTagATap" data-src='{{link}}' wx:if='{{!!link}}'>原文链接</text>
+  </view>
+  <!-- <view class='ori-link'>原文链接：<text selectable='true'>{{link}}</text></view> -->
+
+  <!--富文本转换库使用 start  -->
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <!--富文本转换库使用 end  -->
+</view>
+
+<view class="zan-popup {{ showPopup ? 'zan-popup--show' : ''}}">
+  <view class="zan-popup__mask" bindtap="togglePopup"></view>
+  <view class="zan-popup__container rss-item-popup__container">
+    <view class='ori-link'>
+      <view>长按链接选择复制后，可在浏览器中打开</view>
+      <text selectable='true'>{{linkSrc}}</text>
+    </view>
+  </view>
+</view>

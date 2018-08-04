@@ -1,0 +1,62 @@
+/* pages/rssed/rssed.wxss */
+.zan-col {
+  background-color: #39a9ed;
+  height: 25vw;
+  /* line-height: 25vw; */
+  text-align: center;
+  padding-top: 60rpx;
+  color: #fff;
+  position: relative;
+}
+
+.zan-col:nth-child(odd) {
+  background-color: #66c6f2;
+}
+
+.delete-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.delete-bar {
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  top: 0;
+  right: 0;
+}
+
+.delete {
+  position: absolute;
+  font-size: 28rpx;
+  width: 34rpx;
+  height: 34rpx;
+  line-height: 32rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+
+.avatar {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.rss-author {
+  font-size: 24rpx;
+}
+
+.rss-add {
+  font-size: 48rpx;
+  padding-top: 60rpx;
+}
+
+.rss-more {
+  font-size: 48rpx;
+  padding-top: 48rpx;
+}

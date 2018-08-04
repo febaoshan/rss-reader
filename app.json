@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/rssed/rssed",
+    "pages/rsscenter/rsscenter",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,12 @@
+<!--pages/more/more.wxml-->
+<view class="container">
+  <view class='title'>免责声明：</view>
+  <view>该程序为rss源阅读器，所有信息均来自于网络，版权归rss源提供网站所有，如有侵权，请联系作者修改</view>
+
+  <view class='title'>意见反馈：</view>
+  <view>该程序正在逐步完善，还有很多不尽人意的地方，欢迎大家提供宝贵意见</view>
+  <view>该程序暂不支持自定义rss源设置，如有更好rss源推荐，请联系作者</view>
+
+  <view class='title'>联系方式：</view>
+  <view>2987900397@qq.com</view>
+</view>

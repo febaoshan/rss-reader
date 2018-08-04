@@ -1,0 +1,14 @@
+/* pages/more/more.wxss */
+.container {
+  font-size: 28rpx;
+  color: #666;
+  padding: 12rpx 24rpx;
+  display: block;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 32rpx;
+  color: #333;
+  margin: 30rpx 0 10rpx;
+}

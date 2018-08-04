@@ -1,0 +1,88 @@
+/* pages/rsscenter/rsscenter.wxss */
+.category {
+  padding: 24rpx;
+}
+
+.zan-col {
+  background-color: #39a9ed;
+  height: 25vw;
+  /* line-height: 25vw; */
+  text-align: center;
+  padding-top: 60rpx;
+  color: #fff;
+  position: relative;
+}
+
+.zan-col:nth-child(odd) {
+  background-color: #66c6f2;
+}
+
+.avatar {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.rss-author {
+  font-size: 24rpx;
+}
+
+.rss-add {
+  font-size: 48rpx;
+}
+
+.rss-item-popup__container {
+  padding:12px 24px;
+  width:70vw;
+}
+
+.rss-item-popup__container .avatar {
+  width:32rpx;
+  height:32rpx;
+  vertical-align:bottom;
+  margin-right:12rpx;
+}
+
+.rss-header {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.rss-header-txt {
+  color: deepskyblue;
+}
+
+.description {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 12px;
+}
+
+.sub {
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #39a9ed;
+  text-align: center;
+  padding: 10rpx 18rpx;
+  border-radius: 12rpx;
+  float: right;
+}
+
+.subed {
+  background-color: #09BB07;
+}
+
+.rssed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #09BB07;
+  overflow: hidden;
+}
+
+.rssed-icon {
+  background:#fff;
+}

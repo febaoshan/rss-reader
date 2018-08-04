@@ -1,0 +1,41 @@
+/**index.wxss**/
+.container {
+  display: block;
+}
+
+.title {
+  padding: 0 24rpx;
+  font-size: 48rpx;
+}
+
+.info-box {
+  padding: 0 24rpx;
+  font-size: 18rpx;
+  color: #666;
+  margin: 24rpx 0;
+}
+
+.avatar {
+  width: 31rpx;
+  height: 31rpx;
+  margin-right: 12rpx;
+}
+
+.info-box text + text {
+  margin-left: 12rpx;
+}
+
+.rss-item {
+  font-size: 24rpx;
+  padding: 12rpx 36rpx 12rpx 24rpx;
+  background-color: #fff; 
+  position: relative;
+}
+
+.rss-item + .rss-item {
+  margin-top: 24rpx;
+}
+
+.rss-item text {
+  text-align: left;
+}

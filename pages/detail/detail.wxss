@@ -1,0 +1,35 @@
+/* pages/detail/detail.wxss */
+.title {
+  font-size: 48rpx;
+  margin: 0 5px;
+}
+
+.info-box {
+  font-size: 24rpx;
+  color: #666;
+  margin: 24rpx 5px;
+}
+
+.avatar {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 12rpx;
+}
+
+.info-box text + text {
+  margin-left: 12rpx;
+}
+
+.ori-link {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.ori-link-txt {
+  color: deepskyblue;
+}
+
+.rss-item-popup__container {
+  padding:12px 24px;
+  width:70vw;
+}

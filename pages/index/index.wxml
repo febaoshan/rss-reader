@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<!-- <import src="../../wxParse/wxParse.wxml"/>  -->
+<view class="container" wx:if='{{!!author}}'>
+  <view class='title'>
+    <image class='avatar' mode='aspectFit' src='{{favicon}}'></image>{{author}}
+  </view>
+  <view class='info-box'>
+    <text>{{copyright}}</text>
+    <text>{{pubDate}}</text>
+  </view>
+  <view
+    class='rss-item'
+    bindtap='handleRssItemTap'
+    data-rss-item-data='{{idx}}'
+    data-rss-item-favicon='{{favicon}}'
+    wx:for="{{rssData.item}}"
+    wx:for-index="idx"
+    wx:for-item="itemName"
+    wx:key="unique">
+    <text>{{itemName.title}}</text>
+    <view class='right-arrow'></view>
+  </view>
+</view>
