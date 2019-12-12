@@ -4,6 +4,7 @@
     "pages/rsscenter/rsscenter",
     "pages/detail/detail",
     "pages/index/index",
+    "pages/customrss/customrss",
     "pages/more/more"
   ],
   "window": {

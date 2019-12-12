@@ -9,13 +9,6 @@ const rssData = [
     rssUrl: 'https://www.zhihu.com/rss',
   },
   {
-    title: '知乎日报',
-    link: 'https://daily.zhihu.com',
-    description: '知乎日报是一款拥有千万用户的资讯类客户端，每日提供来自知乎社区的精选问答，还有国内一流媒体的专栏特稿。',
-    favicon: 'https://zhihu.com/favicon.ico',
-    rssUrl: 'https://awk.tw/rss/daily.zhihu.rss',
-  },
-  {
     title: '好奇心日报',
     link: 'https://www.qdaily.com',
     description: '这是一个帮助你发现生活何以美好的商业新闻媒体。所有内容均原创或者邀请专业作者撰写。报道涉及智能、设计、城市、时尚和娱乐等领域。全部都建立在商业视角之上。',
@@ -72,6 +65,15 @@ const rssData = [
     rssUrl: 'https://www.zreading.cn/feed',
     remark: '无detail',
   },
+  {
+    title: '物联网技术交流博客',
+    link: 'https://blog.fe.ioteams.com',
+    description: '物联网技术交流博客',
+    favicon: 'https://blog.fe.ioteams.com/static/upload/201611/logo.jpg',
+    rssUrl: 'https://blog.fe.ioteams.com/rss.html',
+    remark: '',
+  },
+
 
   // 新闻资讯
   {
@@ -328,6 +330,16 @@ const rssData = [
     rssUrl: 'http://www.ign.xn--fiqs8s/feed.xml',
     remark: '无https，所有图片为网站根路径，无法加载',
   },
+
+  // 创业
+  {
+    title: '创业邦',
+    link: 'http://www.cyzone.cn',
+    description: '创投库，融资，起步，成长，技术，生活',
+    favicon: 'http://www.cyzone.cn/favicon.ico',
+    rssUrl: 'http://www.cyzone.cn/rss',
+    remark: '无https，所有图片为网站根路径，无法加载',
+  },
   
   /* {
     title: '意林',
@@ -444,6 +456,14 @@ const rssData = [
     favicon: 'http://www.matrix67.com/favicon.ico',
     rssUrl: 'http://www.matrix67.com/blog/feed',
     remark: '停更到2016.10.18'
+  }, */
+  /* {
+    title: '知乎日报',
+    link: 'https://daily.zhihu.com',
+    description: '知乎日报是一款拥有千万用户的资讯类客户端，每日提供来自知乎社区的精选问答，还有国内一流媒体的专栏特稿。',
+    favicon: 'https://zhihu.com/favicon.ico',
+    rssUrl: 'https://awk.tw/rss/daily.zhihu.rss',
+    remark: '停更'
   }, */
 ];
 

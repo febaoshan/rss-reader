@@ -3,7 +3,8 @@
   <block wx:for="{{rssedData}}" wx:key="{{index}}">
     <view class="zan-col zan-col-6" bindtap='handleRssItemTap' bindlongpress='handleRssItemShowDelete' data-rss-id='{{index}}' data-rss-item-data='{{item}}'>
       <!--logo start -->
-      <image class='avatar' mode='aspectFit' src='{{item.favicon}}'></image>
+      <image class='avatar' mode='aspectFit' wx:if="{{item.favicon === 'defaultRssLogo'}}" src='{{defaultRssLogo}}'></image>
+      <image class='avatar' mode='aspectFit' wx:else src='{{item.favicon}}'></image>
       <!--logo end  -->
       
       <view class='rss-author'>{{item.title}}</view>
@@ -17,6 +18,11 @@
   </block>
   <view class="zan-col zan-col-6 rss-add" bindtap='handleRssAdd'>
     +
+    <view class='rss-author'>推荐源添加</view>
+  </view>
+  <view class="zan-col zan-col-6 rss-add" bindtap='handleCustomRssAdd'>
+    +
+    <view class='rss-author'>自定义添加</view>
   </view>
   <view class="zan-col zan-col-6 rss-more" bindtap='handleMore'>
     ...

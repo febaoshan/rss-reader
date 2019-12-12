@@ -6,7 +6,8 @@
 <view class="container">
   <view class='title'>{{title}}</view>
   <view class='info-box'>
-    <image class='avatar' mode='aspectFit' src='{{favicon}}'></image>
+    <image class='avatar' mode='aspectFit' wx:if="{{favicon === 'defaultRssLogo'}}" src='{{defaultRssLogo}}'></image>
+    <image class='avatar' mode='aspectFit' wx:else src='{{favicon}}'></image>
     <text>{{author}}</text>
     <text>{{pubDate}}</text>
     <text class='ori-link-txt' bindtap="wxParseTagATap" data-src='{{link}}' wx:if='{{!!link}}'>原文链接</text>
@@ -24,8 +25,10 @@
   <view class="zan-popup__mask" bindtap="togglePopup"></view>
   <view class="zan-popup__container rss-item-popup__container">
     <view class='ori-link'>
-      <view>长按链接选择复制后，可在浏览器中打开</view>
+      <view wx:if="{{!canIUseClipboard}}">长按链接选择复制后，可在浏览器中打开</view>
       <text selectable='true'>{{linkSrc}}</text>
+      <view wx:if="{{canIUseClipboard}}" class="line-white-space"></view>
+      <button wx:if="{{canIUseClipboard}}" bindtap="copyCode" class="zan-btn zan-btn--primary">复制链接</button>
     </view>
   </view>
 </view>

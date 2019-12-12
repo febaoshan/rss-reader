@@ -9,4 +9,16 @@
 
   <view class='title'>联系方式：</view>
   <view>2987900397@qq.com</view>
+
+
+  <view class='title'>版本日志：</view>
+  
+  <view>第二版</view>
+  <view>2018-10-08</view>
+  <view>1. 新增rss2.0和rss atom适配</view>
+  <view>2. 新增自定义rss源添加功能</view>
+  
+  <view>第一版</view>
+  <view>2018-05-30</view>
+  <view>全新上线</view>
 </view>

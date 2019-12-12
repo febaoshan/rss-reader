@@ -1,0 +1,80 @@
+<view class="container">
+
+  <view class="doc-title">自定义源</view>
+  <form bindsubmit="handleSubmit">
+    <view class="zan-form">
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title"><text class="form-required">*</text>源地址</text>
+        <input
+          name="rssUrl"
+          value="{{rssUrl}}"
+          class="zan-form__input zan-cell__bd"
+          placeholder="源地址"
+        />
+      </view>
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title"><text class="form-required">*</text>源名称</text>
+        <input
+          name="title"
+          value="{{title}}"
+          class="zan-form__input zan-cell__bd"
+          placeholder="源名称"
+        />
+      </view>
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title">源描述</text>
+        <input
+          name="description"
+          value="{{description}}"
+          class="zan-form__input zan-cell__bd"
+          placeholder="源描述"
+        />
+      </view>
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title"><text class="form-required">*</text>源logo</text>
+        <input
+          name="favicon"
+          value="{{favicon}}"
+          class="zan-form__input zan-cell__bd"
+          placeholder="源logo"
+          bindblur="handleLogoDisplay"
+        />
+      </view>
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title">源官网链接</text>
+        <input
+          name="link"
+          value="{{link}}"
+          class="zan-form__input zan-cell__bd"
+          placeholder="源官网链接"
+        />
+      </view>
+    </view>
+
+    <view class="zan-form" style="margin-top: 20px">
+      <view class="zan-cell zan-form__item">
+        <view class="zan-cell__bd">
+          <text class="zan-form__title">源logo展示</text>
+          <image
+            class="favicon"
+            src="{{favicon}}"
+          />
+        </view>
+        <view class="zan-cell__ft">
+          <button class="zan-btn zan-btn--mini zan-btn--primary sms-btn" bindtap="useDefaultLogo">使用默认</button>
+        </view>
+      </view>
+    </view>
+
+    
+    <view class="friendly-tips">温馨提示：</view>
+    <view class="friendly-tips">目前自定义源仅存在于微信缓存中，清除缓存或者更换手机都会丢失自定义源。</view>
+    <view class="friendly-tips">后续会考虑加入服务器存储，敬请期待。</view>
+
+    <view class="" style="margin-top: 20px; text-align: center">
+      <button class="zan-btn zan-btn--primary" formType="submit">添加</button>
+      <button class="zan-btn" bindtap="handleCancel">取消</button>
+    </view>
+  </form>
+
+</view>

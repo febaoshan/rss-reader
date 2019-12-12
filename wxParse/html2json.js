@@ -151,6 +151,11 @@ function html2json(html, bindName) {
                 if (imgUrl[0] == '') {
                     imgUrl.splice(0, 1);
                 }
+                /* if (imgUrl.indexOf('data:image') > -1) {
+                  imgUrl = '';
+                } else {
+                  imgUrl = wxDiscode.urlToHttpUrl(imgUrl, __placeImgeUrlHttps);
+                } */
                 imgUrl = wxDiscode.urlToHttpUrl(imgUrl, __placeImgeUrlHttps);
                 node.attr.src = imgUrl;
                 node.from = bindName;

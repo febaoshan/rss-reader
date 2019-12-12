@@ -19,6 +19,8 @@ Page({
     nodes: article,     // 富文本转化变量
     showPopup: false,   // 链接提示弹框，由于个人开发者不具备webview的权限，如果读者想看更多内容，这里提供链接，需到浏览器访问
     linkSrc: '',        // 链接提示弹框的链接数据
+    canIUseClipboard: wx.canIUse('setClipboardData'),
+    defaultRssLogo: util.defaultRssLogo, // 默认logo
   },
   onLoad: function (options) {
     // 加载页面后，用跨页参数在缓存中查询出具体文字内容
@@ -43,7 +45,7 @@ Page({
       pubDate: pubDate ? util.formatDate("yyyy-MM-dd HH:mm:ss", pubDate) : '', // 日期时间需格式化
     });
 
-    // 多种rss返回值数据的简单兼容处理，待优化（TODO）
+    // rss2.0也有多种rss返回值数据的简单兼容处理，待补充（TODO）
     if (rssDataItem['content:encoded']) {
       // 调用富文本转化方法
       WxParse.wxParse('article', 'html', rssDataItem['content:encoded'], that, 5);
@@ -71,5 +73,17 @@ Page({
         linkSrc,
       });
     }
-  }
+  },
+
+  // 复制按钮
+  copyCode: function() {
+    wx.setClipboardData({
+      data: this.data.linkSrc,
+      success: function () {
+        wx.showToast({
+          title: '复制成功',
+        })
+      }
+    })
+  },
 })

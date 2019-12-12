@@ -1,4 +1,6 @@
 // pages/rssed/rssed.js
+const util = require('../../utils/util.js');          // 引入通用库
+
 Page({
 
   /**
@@ -18,6 +20,7 @@ Page({
       },
     ],
     curSelectId: '', // 当前选中的源id
+    defaultRssLogo: util.defaultRssLogo,
   },
 
   /**
@@ -109,6 +112,15 @@ Page({
   handleRssAdd: function(event) {
     wx.navigateTo({
       url: '../rsscenter/rsscenter',
+    });
+  },
+
+  /**
+   * 点击自定义添加，跳转到自定义添加页
+   */
+  handleCustomRssAdd: function(event) {
+    wx.navigateTo({
+      url: '../customrss/customrss',
     });
   },
 

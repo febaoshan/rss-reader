@@ -1,0 +1,15 @@
+/* pages/customrss.wxss */
+.favicon {
+  width: 26px;
+  height: 26px;
+}
+
+.friendly-tips {
+  font-size: 12px;
+  color: #666;
+  padding: 12px 12px 0 12px;
+}
+
+.form-required {
+  color: red;
+}
