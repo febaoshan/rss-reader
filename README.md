@@ -1,6 +1,8 @@
 # rss-reader
 微信小程序rss阅读器
 
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=febaoshan.rss-reader)
+
 以下内容全文请参看：https://www.jianshu.com/p/b34bac08151c
 
 
